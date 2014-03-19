@@ -1,0 +1,111 @@
+body{
+    height:100%;
+    width:100%;
+    color:black;
+	line-height: 1.5em;
+	font-family: 'Hammersmith One', sans-serif;
+	background-color: #fff;
+	background-size: 100% 1.75em;
+	background-image: -webkit-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+	                  -webkit-linear-gradient(#eee .05em, transparent .05em);
+	background-image: -moz-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+	                  -moz-linear-gradient(#eee .05em, transparent .05em);
+	background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+	                  linear-gradient(#eee .05em, transparent .05em);
+	-pie-background: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px) 0 0 / 100% 1.2em,
+	                 linear-gradient(#eee .05em, transparent .05em) 0 0 / 100% 1.2em #fff;
+	behavior: url(/pie/PIE.htc);
+
+	}
+a:hover{
+    -webkit-box-shadow: 0 0 8px #FF00FF;
+    -moz-box-shadow: 0 0 8px #FF00FF;
+    box-shadow: 0 0 8px #FF00FF;
+    cursor:pointer;
+}
+
+a:hover{
+    -webkit-box-shadow: 0 0 8px #FF00FF;
+    -moz-box-shadow: 0 0 8px #FF00FF;
+    box-shadow: 0 0 8px #FF00FF;
+    cursor:pointer;
+}
+
+.panel{
+	background: #CCC;
+    background-size:90% 90%;
+    color: black;
+    min-height:100px;
+	display:none;
+	line-height: 1.5;
+	padding: 1%;
+}
+
+.slide {
+	margin:0;
+	padding:0;
+	border-top:solid 2px #cc0000;
+}
+
+
+.pull {
+	display:block;
+   	margin-left: 40%;
+    width:200px;
+    height:20px;
+    font-size:14px;
+	color:#ffffff;
+    background:#cc0000;
+	text-decoration:none;
+	text-transform: uppercase;
+	text-align: center;
+    -moz-border-bottom-left-radius:5px;
+    -moz-border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.pull p {
+    text-align:center;
+}
+
+#todo{
+	margin-left: 15%;
+	width:65%;
+	height: 5%;
+	border-radius: 10px;
+	padding: 1%;
+	font-size: 1.5em;
+}
+
+#submit{
+	height: 5%;
+	width: 6%;
+	color: white;
+	background-color: #cc0000;
+	border: none;
+	border-radius: 10px;
+	font-size: 1.5em;
+	margin: 2%;
+}
+
+#list, .title,.copy{
+	font-size: x-large;
+	margin-left: 8%;
+}
+
+#list{min-height: 250px;}
+
+.copy{margin-top: 5%;}
+
+.title{
+	font-size: 72px;
+font-family: 'Frijole', cursive;}
+
+.item{
+	margin-left: 10%;
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+.bold{
+	font-weight: bolder;
+}
