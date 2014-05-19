@@ -1,10 +1,9 @@
 $(document).ready(function(){
     
-	
 	//empty text from input field		  
 	$('#todo').focus(function(){
-	if($(this).val()==='add item' || $(this).val()==='add new item'){
-		$(this).val('');
+		if($(this).val()==='add item' || $(this).val()==='add new item'){
+			$(this).val('');
 		}
 	}); 
 
@@ -12,18 +11,20 @@ $(document).ready(function(){
 	$('#todo').blur(function(){
 		if($(this).val() === ''){
 			$(this).val('add item');
-			}			
+		}			
 	});
 	
 	//add value of input to list when add button is clicked
 	$('#submit').click(function(){
-		 var toAdd = $('input[name=todo]').val();
-		  $('#list').append('<p class="item">~ ' + toAdd + '</p>');
+		 var textToAdd = $('input[name=todo]').val();
+		  $('#list').append('<p class="item">~ ' + textToAdd + '</p>');
 		  $('#todo').val('add new item');
 		  $('#todo').css('font-style','italic');
 		  $('#todo').css('color','#ccc');
 	});
 
+
+	//make submit button repond to mouse interaction stylistically
 	$('#submit').mouseenter(function(){
 		 $(this).css('box-shadow', '0 0 8px #FF00FF');
 	});
@@ -39,15 +40,15 @@ $(document).ready(function(){
         }
     });
 
-	 //toggles items as completed of pending
+	 //toggles items as completed or pending
 	 $(document).on('click','.item',function(){
 	 	//if "completed", mark pending
 		if($(this).is(".completed")){
-					$(this).fadeTo('fast',1);
-					$(this).css('text-decoration','none');
-					$(this).css('font-style','normal');
-					$(this).removeClass("completed");
-				}
+			$(this).fadeTo('fast',1);
+			$(this).css('text-decoration','none');
+			$(this).css('font-style','normal');
+			$(this).removeClass("completed");
+		}
 		//otherwise mark completed
 		else{
        		$(this).fadeTo('fast',0.75);
@@ -64,14 +65,12 @@ $(document).ready(function(){
     });	
 
 
-    
-	
-	//autocomplete input field
+    //autocomplete input field
 	//$( "#todo" ).autocomplete({ source: [ "c++", "java", "php", "coldfusion", "javascript", "asp", "ruby" ] });
 
 	//toggle slide down
 	 $('.pull').click(function(){
         $('.panel').slideToggle('fast');
-        });	  		  
+     });	  		  
 			  
 })
